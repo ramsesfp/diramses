@@ -1,77 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Flex</title>
 </head>
+
 <body>
   <!-- nav -->
-<nav class="nav">
+  <nav class="nav">
 
-  <ul>
-    <li>
-      <a href="index.html">pagina</a>
-    </li>
-    <li>
-      <a href="index2.html">pagina2</a>
-    </li>
-    <li>
-      <a href="index3.html">pagina3</a>
-    </li>
-  </ul>
+    <ul>
+      <li>
+        <a href="index.html">pagina</a>
+      </li>
+      <li>
+        <a href="index2.html">pagina2</a>
+      </li>
+      <li>
+        <a href="index3.html">pagina3</a>
+      </li>
+    </ul>
 
-</nav>
-<!-- header -->
-<header class="header">
+  </nav>
+  <!-- header -->
+  <header class="header">
 
-  <p>header</p>
-</header>
+    <p>header</p>
+  </header>
 
-<!-- main -->
-<main
-class="main">
-<p>main</p>
-  <!-- section -->
-  <section class="section">
-
+  <!-- main -->
+  <main class="main">
    
-    <!-- article -->
-    <article class="article">
-
-    
-   Crear aquí una card de un producto que tenga:
-    <!-- <div class="card">  -->
--Título
-
--Imagen (pueden copiar la URL de una imagen de Internet y pegarla en el atributo src de la etiqueta <img>)
-
--Precio
-
--Detalles
-
--Disponibilidad (cantidad de articulos disponibles)
-
-Deben crear mínimo 3 cards, reutilizando las clases CSS de nuestro archivo externo o, si prefieren, pueden usar Bootstrap.
-
-Al regresar, terminaremos de estructurar nuestro documento utilizando display: flex y grid, para posteriormente consumir
-los datos desde una API o un archivo JSON en nuestro proyecto y crear elementos dinamicamente con los datos que datos que obtendremos.
-
-Regresare pronto...
-
-    <!-- </div> -->
-    
-    </article>
-  </section>
 
 
 
-</main>
 
-<!-- footer -->
+
+
+
+
+
+
+    <!-- section -->
+    <section class="section1">
+      <!-- article -->
+      <article class="article">
+
+        <div class="titulo">
+          <h1>
+            Mi titulo
+          </h1>
+        </div>
+
+        <div class="texto">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi saepe, unde nesciunt expedita qui sit dolorem nam inventore repellat maxime atque quaerat nihil, molestiae autem ratione odio eligendi laboriosam corporis?
+        </div>
+        <div class="imagen">
+          <img src="img/main_image_star-forming_region_carina_nircam_final-5mb.webp" alt="">
+        </div>
+      </article>
+    </section>
+
+    <section id="section2" class="section2">
+  
+      <!-- lo tenemos en js -->
+      
+    </section>
+
+      <section id="section3" class="section3">
+      <!-- article -->
+      <article id="contenedor" class="article contenedor">
+        
+      </article>
+    </section>
+
+
+    <div class="sider">
+      sider
+    </div>
+
+
+
+  </main>
+
+  <!-- footer -->
   <footer class="footer">
     <p>footer</p>
   </footer>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
