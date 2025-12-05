@@ -1,8 +1,8 @@
-let section2= document.getElementById("section2");
+let section2 = document.getElementById("section2");
 
 let titulo = "mi titulo 2"
 
-let texto= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi saepe, unde nesciunt expedita qui sit dolorem nam inventore repellat maxime atque quaerat nihil, molestiae autem ratione odio eligendi laboriosam corporis?";
+let texto = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi saepe, unde nesciunt expedita qui sit dolorem nam inventore repellat maxime atque quaerat nihil, molestiae autem ratione odio eligendi laboriosam corporis?";
 
 let img = "img/main_image_star-forming_region_carina_nircam_final-5mb.webp";
 
@@ -12,7 +12,7 @@ let section3 = document.getElementById("section3");
 let contenedor = document.getElementById("contenedor");
 
 
-articulo.innerHTML= `
+articulo.innerHTML = `
 <div class="titulo">
     <h1>  ${titulo}  </h1>
 </div>
@@ -26,20 +26,22 @@ articulo.innerHTML= `
 </div>
 `;
 
-articulo.className="articulo2";
+articulo.className = "articulo2";
 section2.appendChild(articulo);
 
 
 //consumir el json
 
 fetch("/productos.json")
-.then(response => response.json())
-.then(data => {
+    .then(response => response.json())
+    .then(data => {
 
-    data.productos.forEach(p => {
+        data.productos.forEach(p => {
+
+
         
-        contenedor.innerHTML+=`
-        
+
+contenedor.innerHTML += `
             <div class="card">
                 <div class="titulo">
                     <h2>${p.nombre}</h2>
@@ -56,12 +58,11 @@ fetch("/productos.json")
                  </div>
             </div>
         `;
+            section3.appendChild(contenedor)
 
-        section3.appendChild(contenedor)
-        
-    });//fin del for
+        });//fin del for
 
 
-})//fin del then
-.catch(e => console.log(e))
+    })//fin del then
+    .catch(e => console.log(e))
 
