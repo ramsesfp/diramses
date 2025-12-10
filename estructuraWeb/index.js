@@ -74,7 +74,8 @@
     let contendeor2 = document.getElementById("contenedor2");
 
     fetch("/productos2.json")
-    .then(response => response.json())
+    .then(res => res.json()) 
+       
     .then(data =>{
         data.productos.forEach(e => {
 
@@ -86,11 +87,16 @@
                 </div>
 
                 <div class="imagen">
-                
                     <img src="${e.imagen}">
-
                 </div>
-            
+
+                <div class="precio">
+                    <p>${e.precio} €</p>
+                </div>
+
+                <div class="botones">
+                    <button class="boton" id="${e.id}">COMPRAR</button>
+                </div>           
             </div>
             `;
 

@@ -181,6 +181,14 @@ section{
     padding: 10px;
 }
 
+.contenedor2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+
+}
+
 .card{
     width: 270px;
     height: 350px;
@@ -190,8 +198,12 @@ section{
 }
 
 .card:hover{
-cursor: pointer;
 transform: scale(1.05);
+}
+
+.boton:hover{
+    cursor: pointer;
+    
 }
 
 /* TITULO */
@@ -230,4 +242,8 @@ transform: scale(1.05);
 .botones button{
     width: 60%;
     height: 25px;
+}
+
+.div-flex{
+    
 }
