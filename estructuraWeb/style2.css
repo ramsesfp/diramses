@@ -8,3 +8,18 @@ body{
     height: 100%;
 }
 
+
+.cuadrado1{
+
+    border: whitesmoke 1px solid;
+    height: 200px;
+    width: 200px;
+}
+
+.cuadrado2{
+
+    border: whitesmoke 1px solid;
+    height: 200px;
+    width: 200px;
+
+}
