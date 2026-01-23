@@ -21,6 +21,7 @@ nav{
     grid-area: nav;
 
     background-color: #333;
+    border-bottom: white solid 1px;
 }
 
 header{
@@ -29,11 +30,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #333;
+
 }
 
 main{
     display: grid;
     grid-area:main;
+    
+}
+
+main section{
+    padding: 30px;
+    background: whitesmoke;
 }
 
 footer{
@@ -84,3 +93,46 @@ a:hover{
 
 
 
+.contenedor{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    border: 1px black solid;
+    width: 350px;
+    border-radius: 7px;
+    box-shadow: 6px 4px 6px 2px black;
+    transition: 0.7s all ease;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card .titulo{
+    text-align: center;
+}
+
+
+.card .precio{
+    padding: 5px;
+}
+
+img{
+    width: 100%;
+}
+
+.botones{
+    padding: 5px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.botones button{
+    background-color: red;
+    color: white;
+}
