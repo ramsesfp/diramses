@@ -136,3 +136,8 @@ img{
     background-color: red;
     color: white;
 }
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
